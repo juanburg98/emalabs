@@ -1,0 +1,12 @@
+---
+const { url, aria } = Astro.props;
+---
+
+<a
+  href={url}
+  aria-label={`Open ${aria} profile`}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <slot />
+</a>
