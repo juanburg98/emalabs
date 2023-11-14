@@ -10,13 +10,17 @@ export default {
       colors: {
         primary: "#171717", // title
         secondary: "#666666", // text
-        tertiary: "#fafafa", // bg
+        tertiary: "#ffffff", // bg
         quaternary: "#ebebeb", // hover
         quinary: "#ffffff", // hover
         sextenary: "#0070f3", // detail
       },
       borderWidth: {
         1: "1px",
+      },
+      letterSpacing: {
+        title: "-3.5px",
+        prueba: "-0.5px",
       },
     },
   },
