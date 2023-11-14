@@ -1,0 +1,60 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+const ogImage = "";
+const ogUrl = "";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <meta
+      name="description"
+      content="Empresa digital especializada en el desarrollo de sitios web y aplicaciones móviles"
+    />
+    <meta
+      name="keywords"
+      content="Sitios web,diseño web,software,aplicaciones móviles,desarrollo mobile,aplicaciones para celular,tecnología web,advertising,agency,digital,ads,publicidad"
+    />
+    <meta name="author" content="Emalabs" />
+    <meta name="geo.region" content="UY-MO" />
+    <meta name="geo.placename" content="Montevideo" />
+    <meta name="geo.position" content="-34.904108;-56.158101" />
+    <meta name="ICBM" content="-34.904108, -56.158101" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="og:image" content={ogImage} />
+    <meta
+      name="og:title"
+      content="Desarrollo de sitios web y aplicaciones móviles | Emalabs"
+    />
+    <meta
+      name="og:description"
+      content="Empresa digital especializada en el desarrollo de sitios web y aplicaciones móviles"
+    />
+    <meta name="og:url" content={ogUrl} />
+    <meta name="og:site_name" content="Emalabs" />
+    <meta name="og:type" content="website" />
+    <meta name="og:locale" content="es_UY" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+  html {
+    font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #fafafa;
+  }
+</style>
