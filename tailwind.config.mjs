@@ -10,7 +10,7 @@ export default {
       colors: {
         primary: "#171717", // title
         secondary: "#666666", // text
-        tertiary: "#ffffff", // bg
+        tertiary: "#fafafa", // bg
         quaternary: "#ebebeb", // hover
         quinary: "#ffffff", // hover
         sextenary: "#0070f3", // detail
@@ -20,7 +20,7 @@ export default {
       },
       letterSpacing: {
         title: "-3.5px",
-        prueba: "-0.5px",
+        text: "-0.2px",
       },
     },
   },

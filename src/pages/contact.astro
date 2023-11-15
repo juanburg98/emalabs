@@ -12,7 +12,84 @@ import Footer from "../components/Footer.astro";
     </nav>
   </header>
   <main>
-    <Title>¿Cómo te podemos ayudar?</Title>
+    <section class="h-full w-screen">
+      <Title>¿Cómo te podemos ayudar?</Title>
+      <div>
+        <form class="m-2 flex flex-col justify-center pt-20">
+          <label class="flex flex-col">
+            <span class="tracking-text text-base font-medium text-primary"
+              >Nombre completo *</span
+            >
+            <input
+              class="w-96 rounded-md border-1 bg-quinary px-4 py-2"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Ingresá tu nombre completo"
+              minlength="4"
+              required
+            />
+          </label>
+          <label class="flex flex-col">
+            <span class="tracking-text text-base font-medium text-primary"
+              >Compañía *</span
+            >
+            <input
+              class="w-96 rounded-sm border-1 bg-quinary px-4 py-2"
+              type="text"
+              name="company"
+              id="company"
+              placeholder="Ingresá el nombre de tu compañía"
+              required
+            />
+          </label>
+          <label class="flex flex-col">
+            <span class="tracking-text text-base font-medium text-primary"
+              >Correo electrónico *</span
+            >
+            <input
+              class="w-96 rounded-sm border-1 bg-quinary px-4 py-2"
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="Ingresá tu correo electrónico"
+              required
+            />
+          </label>
+          <label class="flex flex-col">
+            <span class="tracking-text text-base font-medium text-primary"
+              >Teléfono *</span
+            >
+            <input
+              class="w-96 rounded-sm border-1 bg-quinary px-4 py-2"
+              type="tel"
+              name="number"
+              id="number"
+              placeholder="Ingresá tu teléfono o celular"
+              minlength="8"
+              required
+            />
+          </label>
+          <label class="flex flex-col">
+            <span class="tracking-text text-base font-medium text-primary"
+              >Mensaje *</span
+            >
+            <textarea
+              class="w-96 rounded-sm border-1 bg-quinary px-4 py-2"
+              name="message"
+              id="message"
+              rows="4"
+              placeholder="Escribí tu mensaje"
+              minlength="10"
+              required></textarea>
+          </label>
+          <button
+            class="tracking-text m-1 w-fit rounded-md border-1 bg-quinary px-4 py-2 text-base font-medium text-secondary shadow-sm hover:border-sextenary hover:text-primary"
+            type="submit">Enviar</button
+          >
+        </form>
+      </div>
+    </section>
   </main>
   <footer>
     <Footer />
