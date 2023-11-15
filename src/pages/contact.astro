@@ -13,11 +13,13 @@ import Footer from "../components/Footer.astro";
   </header>
   <main>
     <section class="h-full w-screen">
-      <Title>¿Cómo te podemos ayudar?</Title>
-      <div>
-        <form class="m-2 flex flex-col justify-center pt-20">
-          <label class="flex flex-col">
-            <span class="tracking-text text-base font-medium text-primary"
+      <div class="m-1 pt-28">
+        <Title>¿Cómo te podemos ayudar?</Title>
+      </div>
+      <div class="flex justify-center">
+        <form class="m-2 flex flex-col justify-center gap-8 pt-20">
+          <label class="flex flex-col gap-1">
+            <span class="text-base font-medium tracking-text text-secondary"
               >Nombre completo *</span
             >
             <input
@@ -30,8 +32,8 @@ import Footer from "../components/Footer.astro";
               required
             />
           </label>
-          <label class="flex flex-col">
-            <span class="tracking-text text-base font-medium text-primary"
+          <label class="flex flex-col gap-1">
+            <span class="text-base font-medium tracking-text text-secondary"
               >Compañía *</span
             >
             <input
@@ -43,8 +45,8 @@ import Footer from "../components/Footer.astro";
               required
             />
           </label>
-          <label class="flex flex-col">
-            <span class="tracking-text text-base font-medium text-primary"
+          <label class="flex flex-col gap-1">
+            <span class="text-base font-medium tracking-text text-secondary"
               >Correo electrónico *</span
             >
             <input
@@ -56,8 +58,8 @@ import Footer from "../components/Footer.astro";
               required
             />
           </label>
-          <label class="flex flex-col">
-            <span class="tracking-text text-base font-medium text-primary"
+          <label class="flex flex-col gap-1">
+            <span class="text-base font-medium tracking-text text-secondary"
               >Teléfono *</span
             >
             <input
@@ -70,8 +72,8 @@ import Footer from "../components/Footer.astro";
               required
             />
           </label>
-          <label class="flex flex-col">
-            <span class="tracking-text text-base font-medium text-primary"
+          <label class="flex flex-col gap-1">
+            <span class="text-base font-medium tracking-text text-secondary"
               >Mensaje *</span
             >
             <textarea
@@ -83,10 +85,12 @@ import Footer from "../components/Footer.astro";
               minlength="10"
               required></textarea>
           </label>
-          <button
-            class="tracking-text m-1 w-fit rounded-md border-1 bg-quinary px-4 py-2 text-base font-medium text-secondary shadow-sm hover:border-sextenary hover:text-primary"
-            type="submit">Enviar</button
-          >
+          <div class="flex justify-center pb-28">
+            <button
+              class="m-1 rounded-lg border-1 bg-quinary px-4 py-2 text-base font-medium tracking-text text-secondary shadow-sm hover:border-sextenary hover:text-primary"
+              type="submit">Enviar</button
+            >
+          </div>
         </form>
       </div>
     </section>
