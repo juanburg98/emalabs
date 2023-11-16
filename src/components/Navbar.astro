@@ -15,9 +15,9 @@ const NAVIGATION_LINKS = [
 ];
 ---
 
-<div class="top-0 w-full border-b-1 bg-tertiary shadow-sm">
+<div class="fixed top-0 z-10 block w-full bg-tertiary">
   <div class="m-1 flex flex-row items-center justify-between px-8 py-3">
-    <a href="/#"><img src="/logo.svg" alt="Logo" width="150px" /></a>
+    <a href="/#"><img src="/logo.svg" alt="Logo" width="160px" /></a>
     <ul class="flex flex-row gap-7">
       {
         NAVIGATION_LINKS.map(({ title, href }) => {
@@ -25,7 +25,7 @@ const NAVIGATION_LINKS = [
             <>
               <li>
                 <a
-                  class="tracking-text text-sm font-medium text-secondary hover:text-primary"
+                  class="text-base font-medium tracking-text text-secondary hover:text-primary"
                   href={href}
                 >
                   {title}
@@ -37,7 +37,7 @@ const NAVIGATION_LINKS = [
       }
       <li>
         <a
-          class="tracking-text rounded-md border-1 bg-quinary p-2 text-sm font-medium text-secondary shadow-sm hover:border-sextenary hover:text-primary"
+          class="rounded-full border-1 bg-quinary px-4 py-2 text-base font-medium tracking-text text-secondary shadow-sm hover:border-sextenary hover:bg-tertiary hover:text-primary"
           href="/contact"
         >
           Contacto
