@@ -6,6 +6,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        serif: ['"Playfair Display", sans serif'],
       },
       colors: {
         primary: "#171717", // title
@@ -19,7 +20,7 @@ export default {
         1: "1px",
       },
       letterSpacing: {
-        title: "-3.5px",
+        title: "-0.80px",
         text: "-0.2px",
       },
     },
