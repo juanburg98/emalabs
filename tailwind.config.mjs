@@ -13,7 +13,7 @@ export default {
         secondary: "#666666", // text
         tertiary: "#fafafa", // bg
         quaternary: "#ebebeb", // hover
-        quinary: "#ffffff", // hover
+        quinary: "#fcfcf7", // hover
         sextenary: "#0070f3", // detail
       },
       borderWidth: {
